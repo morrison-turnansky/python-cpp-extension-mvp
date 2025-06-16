@@ -9,4 +9,4 @@ USER root
 #Install dev packages, just git for now.
 RUN dnf upgrade --refresh -y && dnf install -y python3-pip
 RUN dnf upgrade --refresh -y && dnf install -y git python3 python3-devel gcc-c++ gdb make
-RUN pip install setuptools wheel pybind11
+RUN pip install setuptools wheel pybind11 pytest
